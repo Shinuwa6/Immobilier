@@ -482,6 +482,7 @@ textarea {
 #myCarousel {
  margin-top: 6%;
 }
+
    }
 
    /* Small devices (tablets, 768px and up) */
@@ -499,8 +500,8 @@ textarea {
 
    @media (min-width: 1280px) {
      .ggmaps {
-       height: 700px;
-       width: 500px;
+       height: 600px;
+       width: 450px;
      }
    }
 
