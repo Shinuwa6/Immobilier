@@ -231,6 +231,21 @@ textarea {
     }
 }
 
+
+
+
+
+
+
+
+/* ############################################################################DEBUT DE MON CSS#########################################*/
+
+
+
+
+
+
+
 /* ##################################################################### */
 
 
@@ -238,6 +253,18 @@ textarea {
 
 
 /* ##################################################################### */
+
+
+
+
+
+
+
+
+
+
+
+/* TEMPLATE FOOTER ********************************************************************/
 
 .footer-distributed {
     background-color: black;
@@ -383,6 +410,14 @@ textarea {
         margin-left: 0;
     }
 }
+
+/* ################################################################FIN DU TEMPLATE FOOTER############################### */
+
+
+
+
+/* #################################### MON CSS ############################### */
+
 .pad {
     padding-bottom: 8%;
 }
@@ -390,18 +425,9 @@ textarea {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/*
-    * What follows is the result of much research on cross-browser styling.
-    * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-    * Kroc Camen, and the H5BP dev community and team.
-    */
-
 body {
     background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 section h3 {
     text-align: center;
@@ -424,6 +450,19 @@ section h2 {
 #myCarousel {
     margin-top: 11%;
 }
+.titlechange {
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Extra small devices (phones, less than 768px) */
 
@@ -445,18 +484,30 @@ section h2 {
         margin-top: 6%;
     }
     .titlechange {
-        font-size: 3em;
+        font-size: 2em;
     }
-    .btnlel  {
-      margin-top: 7%;
-      height: 50px;
-      width: 150px;
+    .btnlel {
+        margin-top: 7%;
+        height: 50px;
+        width: 150px;
     }
     .regul {
-      margin-top: 5%;
-      font-size: 1.5em;
+        margin-top: 5%;
+        font-size: 1.2em;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small devices (tablets, 768px and up) */
 
@@ -477,11 +528,20 @@ section h2 {
         height: 600px;
         width: 450px;
     }
-    .btnlel  {
-      height: 70px;
-      width: 170px;
+    .btnlel {
+        height: 70px;
+        width: 170px;
+    }
+    .regul {
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    .titlechange {
+        font-size: 3em;
     }
 }
+
+
 
 /* ##################################################################### */
 
