@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -28,7 +30,6 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -53,12 +54,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -91,11 +87,10 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers:
@@ -127,8 +122,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -157,12 +151,12 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -176,11 +170,7 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -191,328 +181,317 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
 
+/* ##################################################################### */
 
 
-   /* ##################################################################### */
+/* ##########################   SMARTPHONE   ########################### */
 
 
-   /* ##########################   SMARTPHONE   ########################### */
+/* ##################################################################### */
+
+.footer-distributed {
+    background-color: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 35%;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+.pad {
+    padding-bottom: 8%;
+}
+.carousel {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 
-   /* ##################################################################### */
-
-   .footer-distributed {
-       background-color: black;
-       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-       box-sizing: border-box;
-       width: 100%;
-       text-align: left;
-       font: bold 16px sans-serif;
-       padding: 55px 50px;
-       margin-top: 35%;
-   }
-   .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-       display: inline-block;
-       vertical-align: top;
-   }
-
-   /* Footer left */
-
-   .footer-distributed .footer-left {
-       width: 40%;
-   }
-
-   /* The company logo */
-
-   .footer-distributed h3 {
-       color: #ffffff;
-       font: normal 36px 'Cookie', cursive;
-       margin: 0;
-   }
-   .footer-distributed h3 span {
-       color: #5383d3;
-   }
-
-   /* Footer links */
-
-   .footer-distributed .footer-links {
-       color: #ffffff;
-       margin: 20px 0 12px;
-       padding: 0;
-   }
-   .footer-distributed .footer-links a {
-       display: inline-block;
-       line-height: 1.8;
-       text-decoration: none;
-       color: inherit;
-   }
-   .footer-distributed .footer-company-name {
-       color: #8f9296;
-       font-size: 14px;
-       font-weight: normal;
-       margin: 0;
-   }
-
-   /* Footer Center */
-
-   .footer-distributed .footer-center {
-       width: 35%;
-   }
-   .footer-distributed .footer-center i {
-       background-color: #33383b;
-       color: #ffffff;
-       font-size: 25px;
-       width: 38px;
-       height: 38px;
-       border-radius: 50%;
-       text-align: center;
-       line-height: 42px;
-       margin: 10px 15px;
-       vertical-align: middle;
-   }
-   .footer-distributed .footer-center i.fa-envelope {
-       font-size: 17px;
-       line-height: 38px;
-   }
-   .footer-distributed .footer-center p {
-       display: inline-block;
-       color: #ffffff;
-       vertical-align: middle;
-       margin: 0;
-   }
-   .footer-distributed .footer-center p span {
-       display: block;
-       font-weight: normal;
-       font-size: 14px;
-       line-height: 2;
-   }
-   .footer-distributed .footer-center p a {
-       color: #5383d3;
-       text-decoration: none;
-       ;
-   }
-
-   /* Footer Right */
-
-   .footer-distributed .footer-right {
-       width: 20%;
-   }
-   .footer-distributed .footer-company-about {
-       line-height: 20px;
-       color: #92999f;
-       font-size: 13px;
-       font-weight: normal;
-       margin: 0;
-   }
-   .footer-distributed .footer-company-about span {
-       display: block;
-       color: #ffffff;
-       font-size: 14px;
-       font-weight: bold;
-       margin-bottom: 20px;
-   }
-   .footer-distributed .footer-icons {
-       margin-top: 25px;
-   }
-   .footer-distributed .footer-icons a {
-       display: inline-block;
-       width: 35px;
-       height: 35px;
-       cursor: pointer;
-       background-color: #33383b;
-       border-radius: 2px;
-       font-size: 20px;
-       color: #ffffff;
-       text-align: center;
-       line-height: 35px;
-       margin-right: 3px;
-       margin-bottom: 5px;
-   }
-
-   /* If you don't want the footer to be responsive, remove these media queries */
-
-   @media (max-width: 880px) {
-       .footer-distributed {
-           font: bold 14px sans-serif;
-       }
-       .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-           display: block;
-           width: 100%;
-           margin-bottom: 40px;
-           text-align: center;
-       }
-       .footer-distributed .footer-center i {
-           margin-left: 0;
-       }
-   }
-   .pad {
-       padding-bottom: 8%;
-   }
-
-   .carousel {
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
-   }
-   /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-
-   /*
+/*
     * What follows is the result of much research on cross-browser styling.
     * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
     * Kroc Camen, and the H5BP dev community and team.
     */
 
-   body {
-       background-color: #fff  ;
-   }
-
-
-   section h3 {
-       text-align: center;
-       padding-top: 7%;
-       padding-bottom: 7%;
-
-   }
-   section h2 {
-       text-align: center;
-       padding-top: 5%;
-       padding-bottom: 5%;
-       font-family: cursive;
-   }
-
-
+body {
+    background-color: #fff;
+}
+section h3 {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+section h2 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: cursive;
+}
 .btnlel {
-  margin-top: 4%;
-  transition: 0.5s;
+    margin-top: 4%;
+    transition: 0.5s;
 }
-
 .regul {
-
-  text-align: center;
-
-}
- #myCarousel {
-  margin-top: 11%;
- }
-
-   /* Extra small devices (phones, less than 768px) */
-
-   /* ##################################################################### */
-
-
-   /* ############################   TABLETS   ############################ */
-
-
-   /* ##################################################################### */
-   @media (min-width: 768px) {
-.ggmaps {
-  height: 500px;
-  width:300px;
+    text-align: center;
 }
 #myCarousel {
- margin-top: 6%;
+    margin-top: 11%;
 }
 
-   }
-
-   /* Small devices (tablets, 768px and up) */
-
-   /* ##################################################################### */
+/* Extra small devices (phones, less than 768px) */
 
 
-   /* ############################   DESKTOPS   ########################### */
+/* ##################################################################### */
 
 
-   /* ##################################################################### */
+/* ############################   TABLETS   ############################ */
 
 
-   /* Medium devices (desktops, 992px and up) */
+/* ##################################################################### */
 
-   @media (min-width: 1280px) {
-     .ggmaps {
-       height: 600px;
-       width: 450px;
-     }
-   }
+@media (min-width: 768px) {
+    .ggmaps {
+        height: 500px;
+        width: 300px;
+    }
+    #myCarousel {
+        margin-top: 6%;
+    }
+    .titlechange {
+        font-size: 3em;
+    }
+    .btnlel  {
+      margin-top: 7%;
+      height: 50px;
+      width: 150px;
+    }
+    .regul {
+      margin-top: 5%;
+      font-size: 1.5em;
+    }
+}
 
-   /* ##################################################################### */
-
-   /* ########################   LARGE DESKTOPS   ######################### */
+/* Small devices (tablets, 768px and up) */
 
 
-   /* ##################################################################### */
+/* ##################################################################### */
 
 
-   /* Large devices (large desktops, 1200px and up) */
+/* ############################   DESKTOPS   ########################### */
 
-   @media (min-width: 1200px) {}
+
+/* ##################################################################### */
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 1280px) {
+    .ggmaps {
+        height: 600px;
+        width: 450px;
+    }
+    .btnlel  {
+      height: 70px;
+      width: 170px;
+    }
+}
+
+/* ##################################################################### */
+
+
+/* ########################   LARGE DESKTOPS   ######################### */
+
+
+/* ##################################################################### */
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
